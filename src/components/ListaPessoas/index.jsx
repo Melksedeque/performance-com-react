@@ -1,5 +1,8 @@
 import { useCallback, useState } from "react";
 import Pessoa from "../Pessoa";
+import faker from "faker";
+
+faker.locale = "pt_BR";
 
 export default function ListaPessoas() {
   const [pessoas, setPessoas] = useState(["Maria", "João", "José"]);
@@ -25,7 +28,10 @@ export default function ListaPessoas() {
       <button
         className="button is-primary is-outlined mt-5"
         onClick={() =>
-          setPessoas((listaAnterior) => [...listaAnterior, "Melk"])
+          setPessoas((listaAnterior) => [
+            ...listaAnterior,
+            faker.name.findName(),
+          ])
         }
       >
         Adicionar Pessoa
