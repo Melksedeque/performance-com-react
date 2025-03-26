@@ -5,7 +5,11 @@ import faker from "faker";
 faker.locale = "pt_BR";
 
 export default function ListaPessoas() {
-  const [pessoas, setPessoas] = useState(["Maria", "João", "José"]);
+  const [pessoas, setPessoas] = useState([
+    "Maria do Carmo",
+    "João Carlos Silva",
+    "José de Alencar",
+  ]);
 
   const deletarPessoa = useCallback((id) => {
     setPessoas((listaAnterior) =>
