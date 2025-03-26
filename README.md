@@ -35,11 +35,20 @@ Este é um projeto de gerenciamento de lista de pessoas desenvolvido em React, q
 ## Estrutura de Pastas
 
 ```
-src/
-├── components/
-│   ├── ListaPessoas.jsx
-│   └── Pessoa.jsx
-└── App.jsx
+performance-com-react/
+├── src/
+│   ├── components/
+│   │   ├── ListaPessoas/index.jsx
+│   │   └── Pessoa/index.jsx
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   ├── main.jsx
+├── index.html
+├── LICENSE
+├── package.json
+├── README.md
+└── vite.config.json
 ```
 
 ### Arquivos Principais
