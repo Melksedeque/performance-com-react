@@ -21,12 +21,7 @@ export default function ListaPessoas() {
     <>
       <ul>
         {pessoas.map((pessoa) => (
-          <Pessoa
-            key={pessoa.id}
-            nome={pessoa.nome}
-            id={pessoa.id}
-            deletar={deletarPessoa}
-          />
+          <Pessoa key={pessoa.id} {...pessoa} deletar={deletarPessoa} />
         ))}
       </ul>
       <button
