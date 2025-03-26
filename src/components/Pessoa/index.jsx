@@ -3,4 +3,4 @@ function Pessoa({ nome }) {
   return <p>{nome}</p>;
 }
 
-export default memo(Pessoa);
+export default Pessoa;
