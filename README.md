@@ -1,12 +1,90 @@
-# React + Vite
+# Projeto Lista de Pessoas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Menu
 
-Currently, two official plugins are available:
+- [Descrição](#descrição)
+  - [Principais recursos incluem](#principais-recursos-incluem)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Estrutura de Pastas](#estrutura-de-pastas)
+  - [Arquivos Principais](#arquivos-principais)
+- [Como Instalar e Rodar o Projeto](#como-instalar-e-rodar-o-projeto)
+  - [Configuração](#configuração)
+  - [Casos de Uso Comuns](#casos-de-uso-comuns)
+  - [Solução de Problemas](#solução-de-problemas)
+- [Licença](#licença)
+- [Autor](#autor)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Descrição
 
-## Expanding the ESLint configuration
+Este é um projeto de gerenciamento de lista de pessoas desenvolvido em React, que permite adicionar e remover pessoas de forma dinâmica utilizando dados fictícios gerados pelo Faker.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Principais recursos incluem
+
+- Adicionar novas pessoas à lista
+- Remover pessoas existentes
+- Geração de dados fictícios utilizando Faker
+- Interface simples e intuitiva
+
+## Tecnologias Utilizadas
+
+- React
+- Faker.js
+- Vite
+- CSS
+
+## Estrutura de Pastas
+
+```
+src/
+├── components/
+│   ├── ListaPessoas.jsx
+│   └── Pessoa.jsx
+└── App.jsx
+```
+
+### Arquivos Principais
+
+- `App.jsx`: Componente principal da aplicação
+- `components/ListaPessoas.jsx`: Gerencia a lista de pessoas
+- `components/Pessoa.jsx`: Renderiza cada pessoa individualmente
+
+## Como Instalar e Rodar o Projeto
+
+### Configuração
+
+1. Clone o repositório
+2. Instale as dependências:
+
+```bash
+npm install
+```
+
+3. Inicie o servidor de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+### Casos de Uso Comuns
+
+- Adicionar uma nova pessoa: Clique no botão "Adicionar Pessoa"
+- Remover uma pessoa: Clique no botão "Me delete!" ao lado de cada pessoa
+
+### Solução de Problemas
+
+- Certifique-se de ter o Node.js instalado
+- Verifique se todas as dependências foram corretamente instaladas
+- Consulte o console do navegador para possíveis erros
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](https://github.com/Melksedeque/organo-alura-reactjs?tab=MIT-1-ov-file) para mais detalhes.
+
+## Autor
+
+- GitHub - [Melksedeque Silva](https://github.com/Melksedeque/)
+- FrontEndMentor - [@Melksedeque](https://www.frontendmentor.io/profile/Melksedeque)
+- Twitter / X - [@SouzaMelk](https://x.com/SouzaMelk)
+- LinkedIn - [Melksedeque Silva](https://www.linkedin.com/in/melksedeque-silva/)
+
+Sinta-se à vontade para contribuir com este projeto! Pull requests são sempre bem-vindos. Lembre-se: juntos, vamos mais longe e construímos soluções incríveis. Cada contribuição, por menor que seja, faz a diferença! 🚀🌟
