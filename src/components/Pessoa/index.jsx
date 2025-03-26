@@ -1,8 +1,8 @@
-export default function Pessoa() {
+export default function Pessoa({ nome }) {
+  console.log(`Pessoa ${nome} renderizou`);
   return (
     <li>
-      <img src="https://www.placecage.com/100/100" alt="Nicolas Cage" />
-      <p>Nicolas Cage</p>
+      <p>{nome}</p>
     </li>
   );
 }
