@@ -3,13 +3,18 @@ import Pessoa from "../Pessoa";
 
 export default function ListaPessoas() {
   const [pessoas, setPessoas] = useState(["Maria", "João", "José"]);
+
+  function deletarPessoa(id) {
+    setPessoas((listaAnterior) =>
+      listaAnterior.filter((pessoa, index) => index !== id)
+    );
+  }
+
   return (
     <>
       <ul>
-        {pessoas.map((pessoa) => (
-          <li key={pessoa} className="box mb-3">
-            <Pessoa nome={pessoa} />
-          </li>
+        {pessoas.map((pessoa, index) => (
+          <Pessoa nome={pessoa} id={index} deletar={deletarPessoa} />
         ))}
       </ul>
       <button
