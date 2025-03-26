@@ -6,7 +6,7 @@ function Pessoa({ nome, deletar, id }) {
   }, [nome]);
 
   return (
-    <li key={id} className="box columns is-vcentered is-centered my-5">
+    <li className="box columns is-vcentered is-centered my-5">
       <span className="is-half">{nome}</span>
       <button
         className="button is-small is-half is-danger ml-2"
