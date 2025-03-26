@@ -1,4 +1,4 @@
-# Projeto Lista de Pessoas
+# Otimizando Listas em React - Projeto Lista de Pessoas
 
 ## Menu
 
