@@ -6,9 +6,14 @@ function Pessoa({ nome, deletar, id }) {
   }, [nome]);
 
   return (
-    <li key={nome} className="box mb-3">
-      <p>{nome}</p>
-      <button onClick={() => deletar(id)}>Me delete!</button>
+    <li key={id} className="box columns is-vcentered is-centered my-5">
+      <span className="is-half">{nome}</span>
+      <button
+        className="button is-small is-half is-danger ml-2"
+        onClick={() => deletar(id)}
+      >
+        Me delete!
+      </button>
     </li>
   );
 }
